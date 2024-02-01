@@ -1,6 +1,6 @@
 name: flavor_config
 description: A Dart package for managing different environments or flavors.
-version: 1.0.0
+version: 1.0.2+1
 publish_to: none
 
 environment:
