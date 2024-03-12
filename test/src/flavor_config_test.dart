@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:flavor_config/flavor_config.dart';
+import 'package:dart_toolbox/dart_toolbox.dart';
 import 'package:test/test.dart';
 
 void main() {

@@ -1,10 +1,25 @@
-import 'package:flavor_config/src/environment.dart';
+/// The environment that the app is currently running in.
+///
+/// This enum is used to differentiate between different stages
+/// of app deployment, such as development, staging, and production.
+/// Each environment can be configured with its own settings
+/// and parameters to ensure the app behaves appropriately.
+enum Environment {
+  /// Development environment - typically used for testing and development purposes.
+  development,
 
-/// {@template flavor_config}
-/// A Dart package for managing different environments or flavors.
+  /// Staging environment - used for pre-production testing.
+  staging,
+
+  /// Production environment - the live environment that end-users interact with.
+  production,
+}
+
+/// {@template dart_toolbox}
+/// A comprehensive Dart package offering a versatile toolbox of utilities, helpers, and extensions to streamline development workflows.
 /// {@endtemplate}
 class FlavorConfig {
-  /// {@macro flavor_config}
+  /// {@macro dart_toolbox}
   factory FlavorConfig(Environment env) {
     _instance ??= FlavorConfig._internal(env);
     return _instance!;

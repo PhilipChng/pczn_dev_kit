@@ -1,3 +1,7 @@
+## 1.1.0+2 - 2024-03-12
+### Changed
+- Package repurpose to generic dart toolbox
+
 ## 1.0.2+1 - 2024-02-01
 ### Changed
 - Regular package update

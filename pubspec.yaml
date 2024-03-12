@@ -1,6 +1,6 @@
-name: flavor_config
-description: A Dart package for managing different environments or flavors.
-version: 1.0.2+1
+name: dart_toolbox
+description: A comprehensive Dart package offering a versatile toolbox of utilities, helpers, and extensions to streamline development workflows.
+version: 1.1.0+2
 publish_to: none
 
 environment:
