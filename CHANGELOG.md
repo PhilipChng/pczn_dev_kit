@@ -1,3 +1,7 @@
+## 1.2.0+3 - 2024-03-12
+### Added
+- Dart extensions for DateTime, List, String
+
 ## 1.1.0+2 - 2024-03-12
 ### Changed
 - Package repurpose to generic dart toolbox
