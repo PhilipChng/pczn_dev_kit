@@ -2,8 +2,6 @@ import 'package:random_string/random_string.dart';
 
 /// A custom generator.
 class Generator {
-  Generator._();
-
   /// Generates an ID based on the current timestamp.
   static String id() {
     final now = DateTime.now();
