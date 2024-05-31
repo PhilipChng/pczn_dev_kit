@@ -39,4 +39,78 @@ void main() {
       expect(emailString.isEmail, isTrue);
     });
   });
+
+  group('RecaseExtension', () {
+    const String mockText = 'This is-Some_sampleText. YouDig?';
+
+    test('camelCase', () {
+      expect(
+        mockText.camelCase,
+        equals('thisIsSomeSampleTextYouDig?'),
+      );
+    });
+
+    test('CONSTANT_CASE', () {
+      expect(
+        mockText.constantCase,
+        equals('THIS_IS_SOME_SAMPLE_TEXT_YOU_DIG?'),
+      );
+    });
+
+    test('Sentence case', () {
+      expect(
+        mockText.sentenceCase,
+        equals('This is some sample text you dig?'),
+      );
+    });
+
+    test('snake_case', () {
+      expect(
+        mockText.snakeCase,
+        equals('this_is_some_sample_text_you_dig?'),
+      );
+    });
+
+    test('dot.case', () {
+      expect(
+        mockText.dotCase,
+        equals('this.is.some.sample.text.you.dig?'),
+      );
+    });
+
+    test('path/case', () {
+      expect(
+        mockText.pathCase,
+        equals('this/is/some/sample/text/you/dig?'),
+      );
+    });
+
+    test('param-case', () {
+      expect(
+        mockText.paramCase,
+        equals('this-is-some-sample-text-you-dig?'),
+      );
+    });
+
+    test('PascalCase', () {
+      expect(
+        mockText.pascalCase,
+        equals('ThisIsSomeSampleTextYouDig?'),
+      );
+    });
+
+    test('Header-Case', () {
+      expect(
+        mockText.headerCase,
+        equals('This-Is-Some-Sample-Text-You-Dig?'),
+      );
+    });
+
+    test('Title-Case', () {
+      expect(
+        mockText.titleCase,
+        equals('This Is Some Sample Text You Dig?'),
+      );
+    });
+  });
 }
