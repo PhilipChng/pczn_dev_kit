@@ -3,3 +3,4 @@ library dart_toolbox;
 
 export 'src/extensions/extensions.dart';
 export 'src/flavor_config/flavor_config.dart';
+export 'src/generator/generator.dart';
