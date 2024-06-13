@@ -1,7 +1,10 @@
 // ignore_for_file: omit_local_variable_types
 
-import 'package:pczn_dev_kit/pczn_dev_kit.dart';
+// Package imports:
 import 'package:test/test.dart';
+
+// Project imports:
+import 'package:pczn_dev_kit/pczn_dev_kit.dart';
 
 void main() {
   group('StringExtension', () {

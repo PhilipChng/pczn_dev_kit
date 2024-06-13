@@ -1,6 +1,10 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:pczn_dev_kit/pczn_dev_kit.dart';
+
+// Package imports:
 import 'package:test/test.dart';
+
+// Project imports:
+import 'package:pczn_dev_kit/pczn_dev_kit.dart';
 
 void main() {
   tearDownAll(FlavorConfig.reset);

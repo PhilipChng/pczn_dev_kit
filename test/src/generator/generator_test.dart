@@ -1,5 +1,8 @@
-import 'package:pczn_dev_kit/src/generator/generator.dart';
+// Package imports:
 import 'package:test/test.dart';
+
+// Project imports:
+import 'package:pczn_dev_kit/src/generator/generator.dart';
 
 void main() {
   group('Generator', () {
