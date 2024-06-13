@@ -15,11 +15,11 @@ enum Environment {
   production,
 }
 
-/// {@template dart_toolbox}
+/// {@template pczn_dev_kit}
 /// A comprehensive Dart package offering a versatile toolbox of utilities, helpers, and extensions to streamline development workflows.
 /// {@endtemplate}
 class FlavorConfig {
-  /// {@macro dart_toolbox}
+  /// {@macro pczn_dev_kit}
   factory FlavorConfig(Environment env) {
     _instance ??= FlavorConfig._internal(env);
     return _instance!;

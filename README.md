@@ -13,7 +13,7 @@ A comprehensive Dart package offering a versatile toolbox of utilities, helpers,
 Install via `dart pub add`:
 
 ```sh
-dart pub add dart_toolbox
+dart pub add pczn_dev_kit
 ```
 
 ---

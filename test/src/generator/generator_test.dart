@@ -1,4 +1,4 @@
-import 'package:dart_toolbox/src/generator/generator.dart';
+import 'package:pczn_dev_kit/src/generator/generator.dart';
 import 'package:test/test.dart';
 
 void main() {

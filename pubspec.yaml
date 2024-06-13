@@ -1,5 +1,5 @@
-name: dart_toolbox
-description: A comprehensive Dart package offering a versatile toolbox of utilities, helpers, and extensions to streamline development workflows.
+name: pczn_dev_kit
+description: A comprehensive Flutter package offering a versatile toolbox of utilities, helpers, and extensions to streamline development workflows.
 version: 1.2.0+3
 publish_to: none
 
