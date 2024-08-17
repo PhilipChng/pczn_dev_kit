@@ -1,3 +1,7 @@
+## 1.2.1+4 - 2024-08-17
+### Changed
+- Regular package update
+
 ## 1.2.0+3 - 2024-03-12
 ### Added
 - Dart extensions for DateTime, List, String
