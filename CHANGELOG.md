@@ -1,3 +1,7 @@
+## 1.2.2+5 - 2024-08-22
+### Changed
+- Regular package update
+
 ## 1.2.1+4 - 2024-08-17
 ### Changed
 - Regular package update
