@@ -11,8 +11,8 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 class InternetConnectionCheckerBloc extends Cubit<bool> {
   /// {@macro internet_connection_checker_bloc}
   InternetConnectionCheckerBloc({
-    required InternetConnectionChecker connectionChecker,
-  })  : _connectionChecker = connectionChecker,
+    InternetConnectionChecker? connectionChecker,
+  })  : _connectionChecker = connectionChecker ?? InternetConnectionChecker(),
         super(false) {
     _connectionChecker.onStatusChange.listen(update);
   }

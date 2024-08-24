@@ -13,6 +13,8 @@ void main() {
   late InternetConnectionCheckerBloc bloc;
 
   setUp(() {
+    TestWidgetsFlutterBinding.ensureInitialized();
+
     checker = MockInternetConnectionChecker();
     bloc = InternetConnectionCheckerBloc(connectionChecker: checker);
   });
@@ -30,6 +32,11 @@ void main() {
     test('update state to false', () {
       bloc.update(InternetConnectionStatus.disconnected);
       expect(bloc.state, false);
+    });
+
+    test('uses default InternetConnectionChecker when none is provided', () {
+      final defaultBloc = InternetConnectionCheckerBloc();
+      expect(defaultBloc.state, false);
     });
   });
 }
