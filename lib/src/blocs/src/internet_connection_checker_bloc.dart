@@ -28,4 +28,13 @@ class InternetConnectionCheckerBloc extends Cubit<bool> {
         emit(false);
     }
   }
+
+  /// Checks if there is an internet connection.
+  Future<bool> hasConnection() async {
+    final result = await _connectionChecker.hasConnection;
+
+    emit(result);
+
+    return result;
+  }
 }
