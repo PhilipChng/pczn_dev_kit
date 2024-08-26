@@ -8,12 +8,12 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 /// This `Cubit` is responsible for managing the internet connection of the application.
 /// It allows the application to check if there is an internet connection.
 /// {@endtemplate}
-class InternetConnectionCheckerBloc extends Cubit<bool> {
+class InternetConnectionCheckerBloc extends Cubit<bool?> {
   /// {@macro internet_connection_checker_bloc}
   InternetConnectionCheckerBloc({
     InternetConnectionChecker? connectionChecker,
   })  : _connectionChecker = connectionChecker ?? InternetConnectionChecker(),
-        super(false) {
+        super(null) {
     _connectionChecker.onStatusChange.listen(update);
   }
 

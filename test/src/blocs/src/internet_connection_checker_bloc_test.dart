@@ -22,12 +22,12 @@ void main() {
 
   group('InternetConnectionCheckerBloc', () {
     test('uses default InternetConnectionChecker when none is provided', () {
-      expect(InternetConnectionCheckerBloc().state, isFalse);
+      expect(InternetConnectionCheckerBloc().state, isNull);
     });
 
     group('state', () {
-      test('initial is false', () {
-        expect(bloc.state, isFalse);
+      test('initial is null', () {
+        expect(bloc.state, isNull);
       });
 
       test('update to true', () {
