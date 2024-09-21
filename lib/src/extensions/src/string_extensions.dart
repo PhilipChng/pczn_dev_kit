@@ -1,8 +1,8 @@
 // Package imports:
 import 'package:recase/recase.dart';
 
-/// Extension methods for String
-extension StringExtension on String? {
+/// Extension for validation methods for String
+extension StringValidationExtension on String? {
   /// Returns true if the string is null or empty
   bool get isNullOrEmpty {
     if (this == null) {
