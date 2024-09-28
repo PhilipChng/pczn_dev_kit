@@ -10,7 +10,7 @@ import 'dart:async' as _i3;
 // Package imports:
 import 'package:mockito/mockito.dart' as _i1;
 
-import 'package:internet_connection_checker/internet_connection_checker.dart'
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart'
     as _i2;
 
 // ignore_for_file: type=lint
@@ -36,11 +36,11 @@ class _FakeDuration_0 extends _i1.SmartFake implements Duration {
         );
 }
 
-/// A class which mocks [InternetConnectionChecker].
+/// A class which mocks [InternetConnection].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockInternetConnectionChecker extends _i1.Mock
-    implements _i2.InternetConnectionChecker {
+class MockInternetConnection extends _i1.Mock
+    implements _i2.InternetConnection {
   @override
   Duration get checkInterval => (super.noSuchMethod(
         Invocation.getter(#checkInterval),
@@ -55,29 +55,25 @@ class MockInternetConnectionChecker extends _i1.Mock
       ) as Duration);
 
   @override
-  _i3.Future<bool> get hasConnection => (super.noSuchMethod(
-        Invocation.getter(#hasConnection),
+  _i3.Future<bool> get hasInternetAccess => (super.noSuchMethod(
+        Invocation.getter(#hasInternetAccess),
         returnValue: _i3.Future<bool>.value(false),
         returnValueForMissingStub: _i3.Future<bool>.value(false),
       ) as _i3.Future<bool>);
 
   @override
-  _i3.Future<_i2.InternetConnectionStatus> get connectionStatus =>
-      (super.noSuchMethod(
-        Invocation.getter(#connectionStatus),
-        returnValue: _i3.Future<_i2.InternetConnectionStatus>.value(
-            _i2.InternetConnectionStatus.connected),
+  _i3.Future<_i2.InternetStatus> get internetStatus => (super.noSuchMethod(
+        Invocation.getter(#internetStatus),
+        returnValue:
+            _i3.Future<_i2.InternetStatus>.value(_i2.InternetStatus.connected),
         returnValueForMissingStub:
-            _i3.Future<_i2.InternetConnectionStatus>.value(
-                _i2.InternetConnectionStatus.connected),
-      ) as _i3.Future<_i2.InternetConnectionStatus>);
+            _i3.Future<_i2.InternetStatus>.value(_i2.InternetStatus.connected),
+      ) as _i3.Future<_i2.InternetStatus>);
 
   @override
-  _i3.Stream<_i2.InternetConnectionStatus> get onStatusChange =>
-      (super.noSuchMethod(
+  _i3.Stream<_i2.InternetStatus> get onStatusChange => (super.noSuchMethod(
         Invocation.getter(#onStatusChange),
-        returnValue: _i3.Stream<_i2.InternetConnectionStatus>.empty(),
-        returnValueForMissingStub:
-            _i3.Stream<_i2.InternetConnectionStatus>.empty(),
-      ) as _i3.Stream<_i2.InternetConnectionStatus>);
+        returnValue: _i3.Stream<_i2.InternetStatus>.empty(),
+        returnValueForMissingStub: _i3.Stream<_i2.InternetStatus>.empty(),
+      ) as _i3.Stream<_i2.InternetStatus>);
 }
