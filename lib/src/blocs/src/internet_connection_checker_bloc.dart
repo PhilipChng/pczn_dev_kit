@@ -1,6 +1,6 @@
 // Package imports:
 import 'package:bloc/bloc.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
 
 /// {@template internet_connection_checker_bloc}
 /// A `Cubit` that handles the internet connection of the application.
@@ -11,27 +11,27 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 class InternetConnectionCheckerBloc extends Cubit<bool?> {
   /// {@macro internet_connection_checker_bloc}
   InternetConnectionCheckerBloc({
-    InternetConnectionChecker? connectionChecker,
-  })  : _connectionChecker = connectionChecker ?? InternetConnectionChecker(),
+    InternetConnection? connectionChecker,
+  })  : _connectionChecker = connectionChecker ?? InternetConnection(),
         super(null) {
     _connectionChecker.onStatusChange.listen(update);
   }
 
-  final InternetConnectionChecker _connectionChecker;
+  final InternetConnection _connectionChecker;
 
   /// Updates the state based on the internet connection status.
-  void update(InternetConnectionStatus status) {
+  void update(InternetStatus status) {
     switch (status) {
-      case InternetConnectionStatus.connected:
+      case InternetStatus.connected:
         emit(true);
-      case InternetConnectionStatus.disconnected:
+      case InternetStatus.disconnected:
         emit(false);
     }
   }
 
   /// Checks if there is an internet connection.
-  Future<bool> hasConnection() async {
-    final result = await _connectionChecker.hasConnection;
+  Future<bool> hasInternetAccess() async {
+    final result = await _connectionChecker.hasInternetAccess;
 
     emit(result);
 

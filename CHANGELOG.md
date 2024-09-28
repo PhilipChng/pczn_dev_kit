@@ -1,3 +1,7 @@
+## 1.2.4+7 - 2024-09-28
+### Changed
+- Use different package for internet connection checking
+
 ## 1.2.3+6 - 2024-08-26
 ### Added
 - InternetConnectionBloc
