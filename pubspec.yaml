@@ -1,6 +1,6 @@
 name: pczn_dev_kit
 description: A comprehensive Flutter package offering a versatile toolbox of utilities, helpers, and extensions to streamline development workflows.
-version: 1.2.3+6
+version: 1.2.4+7
 publish_to: none
 
 environment:
